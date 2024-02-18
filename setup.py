@@ -76,7 +76,7 @@ model = PPO("MlpPolicy", "CartPole-v1").learn(10_000)
 extra_no_roms = [
     # For render
     "opencv-python",
-    "pygame-ce",
+    "pygame",  # or pygame-ce
     # Tensorboard support
     "tensorboard>=2.9.1",
     # Checking memory taken by replay buffer
